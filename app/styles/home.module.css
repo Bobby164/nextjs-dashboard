@@ -1,0 +1,150 @@
+
+.mainPage {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 24px;
+}
+/*"flex min-h-screen flex-col p-6"*/
+
+.acmeLogoContainer {
+    display: flex;
+    height: 80px;
+    flex-shrink: 0;
+    align-items: flex-end;
+    border-radius: 8px;
+    background-color: #0070f3;
+    padding: 16px;
+}
+/*"flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52"*/
+
+.contentContainer {
+    margin-top: 16px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 16px;
+}
+/*"mt-4 flex grow flex-col gap-4 md:flex-row"*/
+
+.textAndLinkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    padding: 24px 40px;
+}
+/*"flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20"*/
+
+.shape {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*background-color: brown;*/
+}
+
+
+/*************** Para **************/
+.text-xl {
+    font-size: 1.25rem; /* 20px */
+}
+  
+.text-gray-800 {
+    color: #2d3748; /* Couleur gris foncé */
+}
+  
+.md\:text-3xl {
+    font-size: 1.875rem; /* 30px */
+}
+  
+.md\:leading-normal {
+    line-height: 1.5; /* Hauteur de ligne normale */
+}
+
+/*className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}*/
+/**********************************/
+
+.linkColor {
+    color: #0070f3;
+}
+/*"text-blue-500"*/
+
+.componentLink {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-start;
+    border-radius: 8px;
+    background-color: #0070f3;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.componentLink:hover {
+    background-color: #2589fe;
+}
+/*"flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"*/
+
+.spanLogIn {
+    width: 20px;
+}
+/*"w-5 md:w-6"*/
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+/*"flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12"*/
+
+
+
+@media(min-width: 768px) {
+    .acmeLogoContainer {
+        height: 208px;
+    }
+
+    .contentContainer {
+        flex-direction: row;
+    }
+
+    .textAndLinkContainer {
+        width: 40%;
+        padding: 0 80px;
+    }
+
+    /*************** Para ****************/
+    .md\:text-3xl {
+        font-size: 1.875rem; /* 30px */
+    }
+    
+    .md\:leading-normal {
+        line-height: 1.5; /* Hauteur de ligne normale */
+    }
+    /************************************/
+
+    .componentLink {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .spanLogIn {
+        width: 24px;
+    }
+
+    .imageContainer {
+        width: 60%;
+        padding: 48px 112px;
+    }
+}

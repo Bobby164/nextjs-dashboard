@@ -1,0 +1,32 @@
+
+.layoutContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.sideNavContainer {
+    width: 100%;
+    flex: none;
+}
+
+.childrenContainer {
+    flex-grow: 1;
+    padding: 25px;
+}
+
+@media(min-width: 768px) {
+    .layoutContainer {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .sideNavContainer {
+        width: 250px;
+    }
+
+    .childrenContainer {
+        overflow-y: auto;
+        padding: 50px;
+    }
+}
